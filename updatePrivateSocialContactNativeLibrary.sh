@@ -65,7 +65,7 @@ niceMessage "${podName} oldVersion = $version, newVersion = $newVersion"
 #替换新的版本号
 sed -i  "s/$versionLine/s.version      = \"$newVersion\"/g" ./${podName}.podspec
 verifyOperation "${podName}.podspec替换新版本号失败"
-sed -i  "s/$versionLine/s.version      = \"$newVersion\"/g" ./${SocialContactNative}.podspec
+sed -i  "s/$versionLine/s.version      = \"$newVersion\"/g" ./${nativePodName}.podspec
 verifyOperation "${SocialContactNative}.podspec替换新版本号失败"
 rm ./${podName}.podspec\ 
 rm ./${nativePodName}.podspec\
