@@ -67,8 +67,6 @@ sed -i  "s/$versionLine/s.version      = \"$newVersion\"/g" ./${podName}.podspec
 verifyOperation "${podName}.podspec替换新版本号失败"
 sed -i  "s/$versionLine/s.version      = \"$newVersion\"/g" ./${nativePodName}.podspec
 verifyOperation "${SocialContactNative}.podspec替换新版本号失败"
-rm ./${podName}.podspec\ 
-rm ./${nativePodName}.podspec\
 
 #验证podspec
 pod lib lint --allow-warnings --verbose --use-libraries  --sources=https://github.com/dennis-li/DennisRepos.git

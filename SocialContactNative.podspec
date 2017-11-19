@@ -18,7 +18,6 @@ s.version      = "0.0.0"
   s.source       = { :git => "https://github.com/dennis-li/SocialContactNative.git", :tag => s.version }
 
   s.source_files = 'SocialContactNative/*.{h,m}'
- # s.public_header_files = 'Include/*.h'
   s.resources = ['SocialContactNative.xcassets']
 
   s.dependency 'React_debug'
