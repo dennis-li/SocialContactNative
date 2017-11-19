@@ -13,7 +13,7 @@ s.version      = "0.0.0"
   s.author       = { "Dennis Lee" => "lixu.dennislee@gmail.com" }
 
   s.platform     = :ios
-  s.ios.deployment_target = ‘8.0’
+  s.ios.deployment_target = '8.0'
 
   s.source       = { :git => "https://github.com/dennis-li/SocialContactNative.git", :tag => s.version }
 
