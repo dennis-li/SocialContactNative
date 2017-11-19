@@ -1,0 +1,17 @@
+//
+//  SocialContactNativ-Prefix.pch
+//  SocialContactNative
+//
+//  Created by lixu on 2017/11/19.
+//  Copyright © 2017年 lixu. All rights reserved.
+//
+
+#ifndef SocialContactNativ_Prefix_pch
+#define SocialContactNativ_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import "DLModulesCenter.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SocialContactNativ_Prefix_pch */

@@ -37,6 +37,7 @@
 		5C1BAB481FC1702800C3ED4F /* SCNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNative.h; sourceTree = "<group>"; };
 		5C1BAB491FC1702800C3ED4F /* SCNativeCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNativeCommunication.m; sourceTree = "<group>"; };
 		5C1BAB4A1FC1702900C3ED4F /* SCNativeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNativeHelper.m; sourceTree = "<group>"; };
+		5C1BAB521FC183E800C3ED4F /* SocialContactNativ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialContactNativ-Prefix.pch"; sourceTree = "<group>"; };
 		5C744CB11F90788B00C008ED /* libSocialContactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocialContactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C744CBD1F90987100C008ED /* SocialContactNative.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SocialContactNative.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,10 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1BAB511FC183A600C3ED4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C1BAB521FC183E800C3ED4F /* SocialContactNativ-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5C744CA81F90788B00C008ED = {
 			isa = PBXGroup;
 			children = (
 				5C744CBD1F90987100C008ED /* SocialContactNative.xcassets */,
+				5C1BAB511FC183A600C3ED4F /* Supporting Files */,
 				5C744CB31F90788B00C008ED /* SocialContactNative */,
 				5C744CB21F90788B00C008ED /* Products */,
 			);
@@ -262,6 +272,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/SocialContactNativ-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../SocialContact/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -273,6 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/SocialContactNativ-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../SocialContact/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
