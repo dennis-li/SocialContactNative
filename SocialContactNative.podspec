@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SocialContactNative"
-s.version      = "0.0.1"
+s.version      = "0.0.0"
   s.summary      = "SocialContactNative"
   s.description  = <<-DESC
 	                    React description.
